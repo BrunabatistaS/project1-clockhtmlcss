@@ -1,0 +1,56 @@
+.clock {
+    font-size: 270px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    
+}
+
+.clock span {
+    padding: 0 10px;
+}
+@media(max-width:768px){
+    .clock{
+        font-size: 20vw;
+    }
+}
+
+.moon {
+    width: 100px;
+    height: 100px ;
+    border-radius: 50%;
+    background-color:white;
+    position: absolute;
+    top: 15%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    z-index: 1;
+   
+    
+}
+.moon::before {
+content: "";
+position: absolute;
+top: -30px;
+right: 10px;
+width: 120px;
+height: 120px;
+background-color: rgb(180, 170, 170);
+border-radius: 50%;
+z-index: -1;
+}
+
+
+body{
+    background-color: black;
+    color: aliceblue;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   margin: 0;
+}
